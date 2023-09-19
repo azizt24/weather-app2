@@ -1,0 +1,32 @@
+.navbar {
+  background-color: purple;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button, .star, input[type="submit"], button {
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.star {
+  background-color: transparent;
+  font-size: 20px;
+  line-height: 1;
+}
+input[type="text"], input[type="email"], input[type="password"], input[type="submit"] {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+}
