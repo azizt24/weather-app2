@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import './SignIn.css'; // Corrected import path
+
+// Rest of the component code
 
 function SignIn() {
     const [email, setEmail] = useState('');
@@ -10,11 +13,22 @@ function SignIn() {
     };
 
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
-                <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
-                <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
-                <input type="submit" value="Sign In" />
+        <div className="signin-container">
+            <form onSubmit={handleSubmit} className="signin-form">
+                <h2>Sign In</h2>
+                <input
+                    type="email"
+                    placeholder="Email"
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="input-field"
+                />
+                <input
+                    type="password"
+                    placeholder="Password"
+                    onChange={(e) => setPassword(e.target.value)}
+                    className="input-field"
+                />
+                <input type="submit" value="Sign In" className="submit-button" />
             </form>
         </div>
     );

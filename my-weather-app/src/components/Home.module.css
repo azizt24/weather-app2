@@ -1,0 +1,82 @@
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 60px);
+  padding-top: 60px; /* Adjusted for navbar */
+  position: center auto;
+}
+
+.container {
+  width: 60%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  order: 1; /* Ensure the input is first */
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.star {
+  background-color: gold;
+  border-radius: 20%; /* Circular button */
+}
+
+.switch {
+  background-color: lightblue;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.weatherIcon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.temperature, .status {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
